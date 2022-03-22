@@ -4,8 +4,8 @@ LABEL maintainer="Roman Nikov"
 
 RUN apt update; \
     apt install -y wget; \
-    wget https://cdn.filesend.jp/private/msYMulfdBD3GfhRnQFZNLCzgJ5rLkpDcfB0dPPGlKIGi96JVDzba3BMzy1gNnh9C/vcast.tar.gz; \
-    tar xf vcast.tar.gz; \
+    wget https://cdn.filesend.jp/private/YVQCdDW5krl_kUx-XM-wsfGA0iVgv9_btAIRm9utvwbTgUxqsYWJJZkETdAThj-e/vcast_alt.tar.gz; \
+    tar xf vcast_alt.tar.gz; \
     cd vcast; \
     cp config.json /usr/local/bin/config.json; \
     cp videocast /usr/local/bin/videocast; \
