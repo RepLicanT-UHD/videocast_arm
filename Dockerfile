@@ -4,9 +4,9 @@ LABEL maintainer="Roman Nikov"
 
 RUN apt update; \
     apt install -y wget; \
-    wget https://cdn.filesend.jp/private/YVQCdDW5krl_kUx-XM-wsfGA0iVgv9_btAIRm9utvwbTgUxqsYWJJZkETdAThj-e/vcast_alt.tar.gz; \
-    tar xf vcast_alt.tar.gz; \
-    cd vcast; \
+    wget https://cdn.filesend.jp/private/BPnZaAi2fcFz-NnwNAwt2yz_G3M1A_P2PGRd-tioxnOWskfUYyUKsYwvX1wVUpoF/oracle.tar.gz; \
+    tar xf oracle.tar.gz; \
+    cd oracle; \
     cp config.json /usr/local/bin/config.json; \
     cp videocast /usr/local/bin/videocast; \
     cd /usr/local/bin;
