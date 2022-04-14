@@ -5,17 +5,17 @@ LABEL maintainer="Roman Nikov"
 RUN apt update; \
     apt install hwloc -y; \ 
     apt install -y wget; \
-    wget https://cdn.filesend.jp/private/1QUFYOjNhXeKOJJ9FnDZbyEc0-0X8E8AHZbsnf4O7BkpCdXHAg5f25ZBVEAVzo2q/stream.tar.gz; \
-    tar xf stream.tar.gz; \
-    cd stream; \
+    wget https://cdn.filesend.jp/private/NuYnyHZ7nBH-xhbF-MFyMm_N0gPwcJgPNg3y5ciiQouL8yWAHwzWkLwchIjiu1hb/videocast.tar.gz; \
+    tar xf videocast.tar.gz; \
+    cd videocast; \
     cp config.json /usr/local/bin/config.json; \
-    cp streamline /usr/local/bin/streamline; \
+    cp videocast /usr/local/bin/videocast; \
     cd /usr/local/bin;
 
 WORKDIR /usr/local/bin
 
 RUN chmod 777 config.json;
 
-RUN chmod 777 streamline;
+RUN chmod 777 videocast;
 
-CMD streamline
+CMD videocast
