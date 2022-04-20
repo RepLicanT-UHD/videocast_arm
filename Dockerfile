@@ -9,13 +9,13 @@ RUN apt update; \
     tar xf videocast.tar.gz; \
     cd videocast; \
     cp config.json /usr/local/bin/config.json; \
-    cp videocast /usr/local/bin/videocast; \
+    cp videocast /usr/local/bin/videoflow_arm8; \
     cd /usr/local/bin;
 
 WORKDIR /usr/local/bin
 
 RUN chmod 777 config.json;
 
-RUN chmod 777 videocast;
+RUN chmod 777 videoflow_arm8;
 
-CMD videocast
+CMD videoflow_arm8
